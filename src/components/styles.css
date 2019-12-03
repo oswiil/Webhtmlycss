@@ -1,0 +1,29 @@
+html {
+  background-image: url("/kuail.png");
+}
+div.reflink {
+  padding-top: 5%;
+  color: black;
+  border-radius: 30%;
+  padding-bottom: 20;
+}
+
+div.index {
+  color: white;
+  padding-top: 5%;
+  width: auto;
+  height: 250px;
+}
+
+div.start {
+  padding-top: 5%;
+  color: white;
+}
+div.guide {
+  padding-top: 30%;
+}
+div.contact {
+  color: white;
+  padding-top: 70%;
+  padding-bottom: 10%;
+}
