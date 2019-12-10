@@ -8,18 +8,12 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="index">
-      <h3>INDICE</h3>
-      <li>
-        <a href="#li1">Guia de registro</a>
-      </li>
-      <li>
-        <a href="#li2">Referal Links</a>
-      </li>
-      <li>
-        <a href="#li3">Contacto</a>
-      </li>
+    <div className="Links">
+      <Link to="/page">kuailiandp</Link>
+      <Link to="/page-2">Registrarse</Link>
+      <Link to="/page-3">Contacto</Link>
     </div>
+
     <div className="start">
       <h1>HOW TO START</h1>
       <p>
