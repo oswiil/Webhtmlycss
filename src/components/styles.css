@@ -1,6 +1,22 @@
 html {
   background-image: url("/kuail.png");
 }
+
+div.header {
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  max-width: 400px;
+  padding-top: 10%;
+}
+div.rheader,
+div.pheader {
+  color: white;
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top: 3%;
+}
+
 div.reflink {
   padding-top: 5%;
   color: black;
@@ -9,16 +25,42 @@ div.reflink {
 }
 
 div.start {
-  padding-top: 15%;
-  color: white;
+  padding-top: 5%;
+  width: 50%;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
 }
-div.guide {
-  padding-top: 30%;
+div.Contact__title h2 {
+  font-size: 28px;
 }
-div.contact {
-  color: white;
-  padding-top: 70%;
-  padding-bottom: 10%;
+div.Contact__title h3 {
+  font-size: 18px;
+}
+div.Contact__form {
+  padding-top: 5%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: sans-serif;
+}
+div.Contact__form input,
+div.Contact__form textarea {
+  width: 100%;
+
+  background-color: #efefef;
+  outline: none;
+
+  padding: 10px;
+  margin: 2px 0;
+}
+div.Contact__form input:hover,
+div.Contact__form textarea:hover,
+div.Contact__form input:focus,
+div.Contact__form textarea:focus {
+  background-color: white;
 }
 
 .Links a:hover,
@@ -34,17 +76,18 @@ div.contact {
 }
 
 div.Links {
-  padding-top: 5%;
-  margin: center;
+  width: 100%;
+  padding-top: 10%;
+  margin: 0 20%;
 }
 
 .Links a {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 40px;
 
-  padding: 10px 40px 10px;
+  padding: 30px 40px 30px;
   color: white;
-  margin: 1.5%;
+  margin: 5%;
 
   font-size: 20px;
   font-family: sans-serif;

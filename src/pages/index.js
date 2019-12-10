@@ -1,58 +1,26 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+
 import SEO from "../components/seo"
+import useHomeInfo from "../hooks/use-home-page"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div className="Links">
-      <Link to="/page">kuailiandp</Link>
-      <Link to="/page-2">Registrarse</Link>
-      <Link to="/page-3">Contacto</Link>
-    </div>
+const HomePage = () => {
+  const { frontmatter, rawMarkdownBody } = useHomeInfo()
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div>
+        <div className="header">
+          <h1>Welcome to {frontmatter.title}</h1>
+        </div>
+        <div className="start">
+          {" "}
+          <pre>{rawMarkdownBody}</pre>
+        </div>
+      </div>
+    </Layout>
+  )
+}
 
-    <div className="start">
-      <h1>HOW TO START</h1>
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo.
-      </p>
-    </div>
-    <div id="li1" className="guide">
-      <h2>GUIA DE REGISTRO</h2>
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-        voluptas nulla pariatur?
-      </p>
-    </div>
-    <div className="reflink">
-      <h3 id="li2">BUY KUAIS.</h3>
-      ref Link :
-      <a href="http://app.kuailiandp.com/auth/register/ref/8effea01-dc72-497e-b89a-271c592db093">
-        http://app.kuailiandp.com/auth/register/ref
-      </a>
-    </div>
-    <div className="contact">
-      <h2 id="li3">Contacto</h2>
-      <a href="mailto:info@example.com?subject=email%20subject">mail link</a>
-    </div>
-  </Layout>
-)
-
-export default IndexPage
+export default HomePage
