@@ -33,7 +33,9 @@ const ContactPage = () => (
           placeholder="Message"
         ></textarea>
       </label>
-      <button onSubmit>Submit</button>
+      <button className="Links" onSubmit>
+        Submit
+      </button>
     </div>
   </Layout>
 )

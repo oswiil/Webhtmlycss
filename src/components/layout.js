@@ -18,10 +18,10 @@ import Descript from "./descript"
 function Layout({ children }) {
   return (
     <div>
-      <Header />
+      <Header siteTitle={"KuailianPresented"} />
       <Descript />
       <Button />
-      <main>{children}</main>
+      <main className="fade">{children}</main>
     </div>
   )
 }
