@@ -26,9 +26,23 @@ div.reflink {
 
 div.start {
   padding-top: 5%;
-  width: 50%;
+  max-width: 600px;
   margin: 0 auto;
   color: rgb(0, 0, 0);
+}
+div.kuai__amount,
+table.kuai__amount,
+table.kuai__amount textarea {
+  width: 30%;
+  color: white;
+  background-color: rgb(108, 182, 243);
+
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: teal;
+  border-radius: 20px;
+
+  padding: 30px 40px 30px;
 }
 div.Contact__title h2 {
   font-size: 28px;
@@ -50,7 +64,7 @@ div.Contact__form input,
 div.Contact__form textarea {
   width: 100%;
 
-  background-color: #b0c4de;
+  background-color: #6babf3;
   outline: none;
 
   padding: 10px;
