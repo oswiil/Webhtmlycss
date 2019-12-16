@@ -2,13 +2,10 @@ html {
   background-image: url("/kuail.png");
 }
 
-<<<<<<< HEAD
-=======
 div.imageheader {
   max-width: 200;
 }
 
->>>>>>> links
 div.header {
   color: black;
   margin: 0 auto;

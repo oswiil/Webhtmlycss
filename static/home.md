@@ -25,8 +25,3 @@ corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
 Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
 quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
 voluptas nulla pariatur?
-<<<<<<< HEAD
-Marissa mofletona
-te amo te quiero te como todo lo que veo
-=======
->>>>>>> links

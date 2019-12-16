@@ -1,10 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-<<<<<<< HEAD
-import useSiteInfo from "../hooks/use-site-info"
-=======
->>>>>>> links
 
 const Header = ({ siteTitle }) => (
   <header
@@ -14,8 +10,6 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-<<<<<<< HEAD
-=======
         maxWidth: 300,
         float: "left",
         margin: "2%",
@@ -25,7 +19,6 @@ const Header = ({ siteTitle }) => (
     </div>
     <div
       style={{
->>>>>>> links
         margin: `0 auto`,
         maxWidth: 400,
         padding: `1.45rem 1.0875rem`,
