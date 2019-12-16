@@ -1,8 +1,11 @@
 import React from "react"
+<<<<<<< HEAD
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import classnames from "classnames"
 import { useSiteInfo } from "../hooks/use-site-info"
+=======
+>>>>>>> links
 
 const Descript = () => {
   return (

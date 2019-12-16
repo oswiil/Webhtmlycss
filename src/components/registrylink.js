@@ -1,7 +1,10 @@
 import React from "react"
 
 import { Link } from "gatsby"
+<<<<<<< HEAD
 import classnames from "classnames"
+=======
+>>>>>>> links
 
 const reflinks = [
   {
@@ -20,3 +23,22 @@ const reflinks = [
       "http://app.kuailiandp.com/auth/register/ref/8effea01-dc72-497e-b89a-271c592db093",
   },
 ]
+<<<<<<< HEAD
+=======
+
+const Rand = () => {
+  const random = reflinks[Math.floor(Math.random() * reflinks.length)]
+
+  return (
+    <div className="kuai__amount">
+      LINK
+      <tr>
+        {reflinks.map(({ path, label }) => (
+          <Link to={path}>{label}</Link>
+        ))}
+      </tr>
+    </div>
+  )
+}
+export default Rand
+>>>>>>> links
