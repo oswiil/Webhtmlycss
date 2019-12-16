@@ -1,10 +1,6 @@
 import React from "react"
 
 import { Link } from "gatsby"
-<<<<<<< HEAD
-import classnames from "classnames"
-=======
->>>>>>> links
 
 const reflinks = [
   {
@@ -23,8 +19,6 @@ const reflinks = [
       "http://app.kuailiandp.com/auth/register/ref/8effea01-dc72-497e-b89a-271c592db093",
   },
 ]
-<<<<<<< HEAD
-=======
 
 const Rand = () => {
   const random = reflinks[Math.floor(Math.random() * reflinks.length)]
@@ -41,4 +35,3 @@ const Rand = () => {
   )
 }
 export default Rand
->>>>>>> links
