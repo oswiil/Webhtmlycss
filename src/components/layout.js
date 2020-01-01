@@ -18,7 +18,7 @@ import Descript from "./descript"
 function Layout({ children }) {
   return (
     <div>
-      <Header siteTitle={"KuailianPresented"} />
+      <Header siteTitle={"Kuailian Registry"} />
       <Descript />
       <Button />
       <main className="fade">{children}</main>

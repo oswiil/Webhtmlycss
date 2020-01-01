@@ -1,7 +1,5 @@
 import React from "react"
 
-import { Link } from "gatsby"
-
 const reflinks = [
   {
     label: "m0r",
@@ -28,7 +26,7 @@ const Rand = () => {
       LINK
       <tr>
         {reflinks.map(({ path, label }) => (
-          <Link to={path}>{label}</Link>
+          <a href={path}>{label}</a>
         ))}
       </tr>
     </div>

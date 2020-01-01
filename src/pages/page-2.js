@@ -3,8 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import OpenSite from "../components/regostylinks"
+import Rand from "../components/registrylink"
 
 const SecondPage = () => {
   return (
@@ -15,7 +14,7 @@ const SecondPage = () => {
       </div>
 
       <div className="kuai__amount">
-        <OpenSite></OpenSite>
+        <Rand />
       </div>
     </Layout>
   )
