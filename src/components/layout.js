@@ -20,7 +20,7 @@ function Layout({ children }) {
     <div>
       <Header siteTitle={"Kuailian Registry"} />
       <Descript />
-      <Button />
+      <Button className="fade" />
       <main className="fade">{children}</main>
     </div>
   )

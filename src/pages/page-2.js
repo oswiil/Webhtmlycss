@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,10 +11,13 @@ const SecondPage = () => {
       <div className="header">
         <h1>PAGINA DEL LINK</h1>
       </div>
-
-      <div className="kuai__amount">
-        <Rand />
-      </div>
+      <button
+        className="kuai__amount"
+        onClick={() => (document.getElementById("demo").innerText = Rand())}
+      >
+        GenerarLink
+      </button>
+      <div className="kuai__amount" id="demo"></div>
     </Layout>
   )
 }

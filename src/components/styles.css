@@ -1,16 +1,20 @@
 html {
   background-image: url("/kuail.png");
 }
-
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 div.imageheader {
-  max-width: 200;
+  max-width: 200px;
 }
 
 div.header {
   color: black;
   margin: 0 auto;
   display: flex;
-  max-width: 400px;
+  max-width: 100px;
   padding-top: 10%;
 }
 div.rheader,
@@ -34,6 +38,13 @@ div.start {
   margin: 0 auto;
   color: rgb(0, 0, 0);
 }
+button.kuai__amount {
+  border-radius: 20px;
+  box-shadow: teal;
+  display: flex;
+  margin: 0 auto;
+}
+p.kuai__amount,
 div.kuai__amount,
 table.kuai__amount,
 table.kuai__amount textarea {
@@ -100,7 +111,7 @@ div.Contact__form textarea:focus {
 
 div.Links {
   width: 100%;
-  padding-top: 7%;
+  padding-top: 4%;
   margin: 0 20%;
 }
 
@@ -125,5 +136,43 @@ html .fade {
   }
   to {
     opacity: 1;
+  }
+}
+@media (max-width: 5000px) {
+  .imageheader,
+  .pheader,
+  div.rheader,
+  div.pheader {
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  @media (max-width: 1500px) {
+    .imageheader,
+    .pheader,
+    div.rheader,
+    div.pheader {
+      color: white;
+      margin: 0 auto;
+      width: calc(100% - 40px);
+      padding-top: 3%;
+    }
+    div.Links,
+    .links a {
+      font-size: 10px;
+      width: calc(100%-40px);
+    }
+  }
+}
+@media (max-width: 900px) {
+  div.imageheader {
+    width: 20%;
+  }
+  div.Links,
+  .links a {
+    margin: 0;
+    display: flex;
+    width: calc(100%-160px);
   }
 }

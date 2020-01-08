@@ -18,17 +18,20 @@ const reflinks = [
   },
 ]
 
-const Rand = () => {
+function Rand() {
   const random = reflinks[Math.floor(Math.random() * reflinks.length)]
-
+  var ranpath = random.path
+  console.log(ranpath)
   return (
     <div className="kuai__amount">
       LINK
-      <tr>
-        {reflinks.map(({ path, label }) => (
-          <a href={path}>{label}</a>
+      <li>
+        {reflinks.map(({ label }) => (
+          <a key={ranpath} href={ranpath}>
+            {label}clica
+          </a>
         ))}
-      </tr>
+      </li>
     </div>
   )
 }
