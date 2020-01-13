@@ -10,6 +10,7 @@ const HomePage = () => {
   return (
     <Layout>
       <SEO title="Home" />
+
       <div>
         <div className="header">
           <h1>Welcome to {frontmatter.title}</h1>

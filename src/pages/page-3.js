@@ -3,39 +3,72 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const ContactPage = () => (
-  <Layout>
-    <SEO title="Contacto" />
+export default class IndexPage extends React.Component {
+  state = {
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  }
+  handleInputChange = event => {
+    const target = event.target
+    const value = target.value
+    const name = target.name
+    this.setState({
+      [name]: value,
+    })
+  }
+  handleSubmit = event => {
+    event.preventDefault()
+    alert(`Welcome ${this.state.name} ${this.state.message}!`)
+  }
+  render() {
+    return (
+      <Layout>
+        <SEO title="Contacto" />
 
-    <div className="imageDescript"></div>
+        <div className="header">
+          <h1>Contact</h1>
+        </div>
 
-    <div className="header">
-      <h1>Contact</h1>
-    </div>
-
-    <div class="Contact__form">
-      <label>
-        <input type="text" placeholder="First name" />
-      </label>
-      <label>
-        <input type="text" placeholder="Email" />
-      </label>
-      <label>
-        <input type="text" placeholder="Phone" />
-      </label>
-
-      <label>
-        <textarea
-          id="story"
-          name="story"
-          rows="5"
-          cols="33"
-          placeholder="Message"
-        ></textarea>
-      </label>
-      <button onSubmit>Submit</button>
-    </div>
-  </Layout>
-)
-
-export default ContactPage
+        <div className="Contact__form">
+          <form method="post" action="#">
+            <label>
+              NickName*
+              <input
+                name="name"
+                type="text"
+                placeholder="Oswil3"
+                value={this.state.name}
+                onChange={this.handleInputChange}
+                required
+              />
+            </label>
+            <label>
+              Email *
+              <input
+                name="email"
+                type="email"
+                value={this.state.email}
+                onChange={this.handleInputChange}
+                placeholder="example@mail.com"
+                required
+              />
+            </label>
+            <label>
+              Message
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                cols="33"
+                placeholder="message"
+              ></textarea>
+            </label>
+            <button type="submit">Submit</button>{" "}
+          </form>
+        </div>
+      </Layout>
+    )
+  }
+}

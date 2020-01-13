@@ -9,7 +9,7 @@ const links = [
     path: "/",
   },
   {
-    label: "Kuail",
+    label: "Registry",
     path: "/page-2",
   },
   {

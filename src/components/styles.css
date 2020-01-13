@@ -1,33 +1,70 @@
-html {
-  background-image: url("/kuail.png");
-}
-html,
 body {
-  max-width: 100%;
   overflow-x: hidden;
+  background-image: url("/kuail.png");
+  background-repeat: no-repeat;
 }
 div.imageheader {
   max-width: 200px;
 }
 
 div.header {
-  color: black;
-  margin: 0 auto;
-  display: flex;
-  max-width: 100px;
-  padding-top: 10%;
-}
-div.rheader,
-div.pheader {
   color: white;
   margin: 0 auto;
-  max-width: 400px;
-  padding-top: 3%;
+  display: flex;
+  width: 400px;
+  padding-top: 10%;
+}
+div.FPKTlogo {
+  width: 120px;
+  margin: 0px 15%;
+}
+div.kuail_logo {
+  margin: 0px 15%;
+  float: right;
+  margin-top: 70px;
+}
+div.RSociales,
+.RSociales img {
+  float: left;
+  width: 25px;
+  margin: 0px 15%;
+
+  display: flex;
+}
+
+div.ubi__footer,
+div.phone__footer,
+div.mail__footer {
+  width: 800px;
+  margin: 0 auto;
+  margin-left: 40%;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+}
+img.mail__image,
+img.ubi__image,
+img.phone__image {
+  width: 25px;
+  float: left;
+  margin: 0 10px;
+}
+
+footer,
+div.foooter {
+  background-image: url("/foooter.png");
+
+  color: white;
+  background-repeat: no-repeat;
+}
+footer p {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 div.reflink {
   padding-top: 5%;
-  color: black;
+  color: white;
   border-radius: 30%;
   padding-bottom: 20;
 }
@@ -38,12 +75,7 @@ div.start {
   margin: 0 auto;
   color: rgb(0, 0, 0);
 }
-button.kuai__amount {
-  border-radius: 20px;
-  box-shadow: teal;
-  display: flex;
-  margin: 0 auto;
-}
+
 p.kuai__amount,
 div.kuai__amount,
 table.kuai__amount,
@@ -65,6 +97,7 @@ div.Contact__title h2 {
 div.Contact__title h3 {
   font-size: 18px;
 }
+div.contact__form button,
 div.Contact__form {
   padding-top: 5%;
   max-width: 400px;
@@ -75,26 +108,27 @@ div.Contact__form {
 
   font-family: sans-serif;
 }
+div.contact__form button,
 div.Contact__form input,
 div.Contact__form textarea {
   width: 100%;
 
-  background-color: #6babf3;
+  background-color: white;
   outline: none;
 
   padding: 10px;
-  margin: 2px 0;
+  margin: 4px 0;
 
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 40px;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 10px;
 
-  padding: 30px 40px 30px;
+  padding: 20px 40px 5px;
 }
 div.Contact__form input:hover,
 div.Contact__form textarea:hover,
 div.Contact__form input:focus,
 div.Contact__form textarea:focus {
-  background-color: white;
+  background-color: rgba(128, 128, 128, 0.178);
 }
 
 .Links a:hover,
@@ -111,7 +145,7 @@ div.Contact__form textarea:focus {
 
 div.Links {
   width: 100%;
-  padding-top: 4%;
+  padding-top: 7%;
   margin: 0 20%;
 }
 
@@ -127,6 +161,32 @@ div.Links {
   font-family: sans-serif;
   text-decoration: none;
 }
+
+button.links {
+  border-radius: 40px;
+
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(79, 173, 250);
+  font-size: 20px;
+  align-content: center;
+  padding: 30px 40px 30px;
+
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+}
+.links:hover,
+.links.selected {
+  background-color: rgb(255, 255, 255);
+  color: goldenrod;
+}
+
+div.foo__background {
+  background-color: rgba(58, 192, 226, 0);
+  margin-top: 19%;
+  padding-top: 100px;
+}
+
 html .fade {
   animation: fade 2s;
 }

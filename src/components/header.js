@@ -28,6 +28,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
+            boxShadow: "white",
             color: `White`,
             textDecoration: `none`,
           }}

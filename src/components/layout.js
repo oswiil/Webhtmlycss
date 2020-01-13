@@ -13,15 +13,17 @@ import Header from "./header"
 import Button from "./buttonLinks"
 import "./layout.css"
 import "./styles.css"
-import Descript from "./descript"
+
+import FootDescript from "./Footer"
 
 function Layout({ children }) {
   return (
     <div>
       <Header siteTitle={"Kuailian Registry"} />
-      <Descript />
+
       <Button className="fade" />
       <main className="fade">{children}</main>
+      <FootDescript />
     </div>
   )
 }
