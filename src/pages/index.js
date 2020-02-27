@@ -1,27 +1,56 @@
 import React from "react"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import AOS from "aos"
+import "aos/dist/aos.css"
+AOS.init({ offset: 100 })
+export const query = graphql`
+  {
+    allBlogPost {
+      nodes {
+        id
+        date
+        title
+        body
+      }
+    }
+  }
+`
 
-import SEO from "../components/seo"
-import useHomeInfo from "../hooks/use-home-page"
-
-const HomePage = () => {
-  const { frontmatter, rawMarkdownBody } = useHomeInfo()
-  return (
+export default ({ data }) => (
+  <>
     <Layout>
-      <SEO title="Home" />
+      <div
+        className="rows"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        {data.allBlogPost.nodes.map(post => (
+          <div key={post.id}>
+            <div
+              style={{
+                maxWidth: "70%",
+                color: "white",
+                marginTop: "10px",
+                margin: "0 auto",
+                fontSize: "15px",
+              }}
+            >
+              {post.date}
+            </div>
 
-      <div>
-        <div className="header">
-          <h1>Welcome to {frontmatter.title}</h1>
-        </div>
-        <div className="start">
-          {" "}
-          <pre>{rawMarkdownBody}</pre>
-        </div>
+            <div
+              dangerouslySetInnerHTML={{ __html: post.body }}
+              style={{
+                maxWidth: "70%",
+                color: "white",
+                margin: "0 auto",
+                textAlign: "justify",
+              }}
+            />
+          </div>
+        ))}
       </div>
     </Layout>
-  )
-}
-
-export default HomePage
+  </>
+)

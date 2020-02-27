@@ -7,10 +7,9 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-
+import Portada from "./Portada"
 import Header from "./header"
 
-import Button from "./buttonLinks"
 import "./layout.css"
 import "./styles.css"
 
@@ -19,10 +18,10 @@ import FootDescript from "./Footer"
 function Layout({ children }) {
   return (
     <div>
-      <Header siteTitle={"Kuailian Registry"} />
-
-      <Button className="fade" />
+      <Header siteTitle={"Viajamos de Examenes"}></Header>
+      <Portada />
       <main className="fade">{children}</main>
+
       <FootDescript />
     </div>
   )
