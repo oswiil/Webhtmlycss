@@ -16,7 +16,18 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 </fieldset>
 <h1> Actividad 01, HTML + CSS3 </h2>
-<H3>Òscar Sánchez Gimenez</H3>
+<H3>Òscar Sánchez Giménez</H3>
+
+Hola Cristian!
+
+Repito el trabajo, que no pude seguir el ritmo de las classes el curso pasado por trabajo. Lo repito con Gatsby puesto que la otra vez no hubo problema. Queria entregar la práctica con una versión deployada pero no he sabido hacerlo a tiempo.
+
+En el fichero `index.js` no he puesto todo el contenido "html", ya que tengo partes como el `header.js` y `footer.js` que prefiero meterlas en el `layout.js`.
+Luego en `Styles.css` he puesto todo el css.
+
+Los `post` de cada viaje están también separados en un fichero `.md`. Esto lo he aprovechado de otra página que hice hace poco para practicar. Asi que en esta actividad prácticamente solo he tocado los archivos mencionados.
+
+Gracias por dar flexiblidad a que haga la práctica así!
 
 ## 🚀 Para empezar
 
@@ -37,6 +48,7 @@ npm i -g npm # Para actualizar npm.
 Para usar el gatsby debemos instalar antes un conjunto de dependencias mediante
 
 ```sh
+npm install # Para instalar las dependencias de React.
 yarn install # Para instalar las dependencias de React.
 ```
 
